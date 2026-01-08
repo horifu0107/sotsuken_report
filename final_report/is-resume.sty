@@ -1,0 +1,161 @@
+% !TEX encoding = UTF-8 Unicode
+%
+% 2025-07-02 産技高専品川情報・卒研中間発表レジメサンプル
+% 2025-07-04 産技高専品川情報発表レジメ、スタイル化
+% 2025-12-05 本文を9ptに変更
+%
+\typeout{2025-07-04 TMCIT IS resume style v1.0.2}
+
+\usepackage[dvipdfmx]{graphicx,xcolor}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{fancyhdr}
+
+\geometry{left=20mm,right=20mm,top=20mm,bottom=20mm}%用紙マージン設定
+
+\setlength{\headsep}{10pt}
+\setlength{\footskip}{15pt}
+
+\global\let\@course\@empty
+\global\let\@event\@empty
+\global\let\@svisor\@empty
+
+\newcommand*{\course}[1]{\gdef\@course{#1}}
+\newcommand*{\event}[1]{\gdef\@event{#1}}
+\newcommand*{\supervisor}[1]{\gdef\@svisor{#1}}
+
+\course{☆☆☆☆☆☆コース}%   ダミー
+\event{XXXX年卒業研究発表会}%  ダミー
+\supervisor{§§§§§§教授}% ダミー
+
+\pagestyle{fancy}
+\setlength{\headheight}{18.57072pt}
+\lhead{%
+  \color[cmyk]{0.86,0.91,0,0.04}\small 東京都立産業技術高等専門学校}
+%\rhead{%
+%  \color[cmyk]{0.86,0.91,0,0.04}\small 情報システム工学コース\\
+%  2025年度卒業研究中間発表会}
+\rhead{%
+  \color[cmyk]{0.86,0.91,0,0.04}\small \@course\\
+  \@event}
+\lfoot{%
+  \color[cmyk]{0.86,0.91,0,0.04}\small%
+  Tokyo Metropolitan College of Industrial Technology}
+\cfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% section の文字の大きさを large にし，前後の幅を少なめに変更
+\renewcommand{\section}{\@startsection{section}{1}{\z@}%
+   {.25\Cvs \@plus.25\Cdp \@minus.2\Cdp}%
+   {.25\Cvs \@plus.25\Cdp}%
+   {\reset@font\large\bfseries}}
+\renewcommand{\subsection}{\@startsection{subsection}{2}{\z@}%
+   {.15\Cvs \@plus.15\Cdp \@minus.2\Cdp}%
+   {.15\Cvs \@plus.15\Cdp}%
+   {\reset@font\large\bfseries}}
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{\z@}%
+   {.05\Cvs \@plus.05\Cdp \@minus.2\Cdp}%
+   {.05\Cvs \@plus.05\Cdp}%
+   {\reset@font\large\bfseries}}
+
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{\z@}%
+ {3.25ex \@plus 1ex \@minus .2ex}%
+ {-1em}%
+ {\normalfont\normalsize\bfseries}}
+\renewcommand{\subparagraph}{\@startsection{subparagraph}{5}{\z@}%
+ {3.25ex \@plus 1ex \@minus .2ex}%
+ {-1em}%
+ {\normalfont\normalsize\bfseries}}
+
+
+\renewcommand{\maketitle}{\par
+  \begingroup
+    \renewcommand{\thefootnote}{\fnsymbol{footnote}}%
+    \def\@makefnmark{\hbox{\ifydir $\m@th^{\@thefnmark}$
+      \else\hbox{\yoko$\m@th^{\@thefnmark}$}\fi}}%
+     \long\def\@makefntext##1{\parindent 1em\noindent
+       \hb@xt@1.8em{\hss$\m@th^{\@thefnmark}$}##1}%
+    \if@twocolumn
+      \ifnum \col@number=\@ne \@maketitle
+      \else \twocolumn[\@maketitle]%
+      \fi
+    \else
+      \newpage
+      \global\@topnum\z@   % Prevents figures from going at top of page.
+      \@maketitle
+    \fi
+%     \thispagestyle{jpl@in}\@thanks
+    \thispagestyle{fancy}\@thanks
+  \endgroup
+  \setcounter{footnote}{0}%
+  \global\let\thanks\relax
+  \global\let\maketitle\relax
+  \global\let\@maketitle\relax
+  \global\let\p@thanks\relax
+  \global\let\@thanks\@empty
+  \global\let\@author\@empty
+  \global\let\@date\@empty
+  \global\let\@title\@empty
+  \global\let\title\relax
+  \global\let\author\relax
+  \global\let\date\relax
+  \global\let\and\relax
+}
+
+\def\@maketitle{%
+  \newpage\null
+  \vskip 2em%
+  \begin{center}%
+  \let\footnote\thanks
+    {\LARGE \@title \par}%
+%    \vskip 1.5em%
+    \vskip 1em%
+    {\large
+      \lineskip .5em%
+      \begin{tabular}[t]{c}%
+        \@author
+      \end{tabular}\par}%
+    {\large
+      \lineskip .5em%
+      \begin{tabular}[t]{c}%
+        指導教員　\@svisor
+      \end{tabular}\par}%
+%    \vskip 1em%
+%  {\large \@date}%
+  \end{center}%
+  \par%
+  \vskip 1.5em%
+}
+
+% 本文の標準サイズを 9pt にする
+%	Ref. URI = http://devo.mech.usp.ac.jp/~okumura/tex/a8.html
+{\catcode`\/=12
+ \global\expandafter\let\csname JY1/mc/m/n/10\endcsname=\relax}
+ \DeclareFontShape{JY1}{mc}{m}{n}{<-> s * [0.9856676] min10}{}
+ \DeclareFontShape{JY1}{gt}{m}{n}{<-> s * [0.9856676] goth10}{}
+ %
+ \newdimen\@Q\@Q=0.25mm
+ \renewcommand{\normalsize}{
+ \@setfontsize\normalsize{\@ixpt}{18.5\@Q}
+   \abovedisplayskip 9.25\@Q \@plus3\@Q \@minus3\@Q
+   \abovedisplayshortskip \z@ \@plus2\@Q
+   \belowdisplayshortskip 3\@Q \@plus2\@Q \@minus2\@Q
+    \belowdisplayskip \abovedisplayskip
+    \let\@listi\@listI}
+ \normalsize
+ \renewcommand{\small}{%
+   \@setfontsize\small{\@viiipt}{13\@Q}
+   \abovedisplayskip 8\@Q \@plus2\@Q \@minus2\@Q
+   \abovedisplayshortskip \z@ \@plus2\@Q
+   \belowdisplayshortskip 3\@Q \@plus2\@Q \@minus2\@Q
+   \belowdisplayskip \abovedisplayskip}
+ \renewcommand{\footnotesize}{\@setfontsize\footnotesize{\@viipt}{11\@Q}}
+ \renewcommand{\scriptsize}{\@setfontsize\scriptsize{\@vipt}{9\@Q}}
+ \renewcommand{\tiny}{\@setfontsize\tiny{\@vpt}{7\@Q}}
+ \renewcommand{\large}{\@setfontsize\large{\@xpt}{20\@Q}}
+ \renewcommand{\Large}{\@setfontsize\Large{\@xiipt}{24\@Q}}
+ \renewcommand{\LARGE}{\@setfontsize\LARGE{\@xivpt}{30\@Q}}
+ \renewcommand{\huge}{\@setfontsize\huge{\@xviipt}{32\@Q}}
+ \renewcommand{\Huge}{\@setfontsize\Huge{\@xxpt}{36\@Q}}
+
