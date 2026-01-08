@@ -1,0 +1,112 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram name="ページ1" id="B8bMo9JKsC8idkEdRknd">
+    <mxGraphModel dx="1933" dy="617" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4LEHPHs3rhttjtVUU_GD-4" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;$$&lt;br&gt;\begin{eqnarray}&lt;br&gt;x_{0}&lt;br&gt;\end{eqnarray}&lt;br&gt;$$&lt;/font&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="80" y="290" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zlq47JBPpiQjWFzgZbj9-1" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;$$&lt;br&gt;\begin{eqnarray}&lt;br&gt;x_{1}&lt;br&gt;\end{eqnarray}&lt;br&gt;$$&lt;/font&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="80" y="160" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zlq47JBPpiQjWFzgZbj9-14" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;$$ \begin{eqnarray} y=\sigma(a)=\frac{1}{1+exp(-a)} \end{eqnarray}&amp;nbsp; $$&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="140" y="450" width="530" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zlq47JBPpiQjWFzgZbj9-15" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.427;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="zlq47JBPpiQjWFzgZbj9-10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="320" as="sourcePoint" />
+            <mxPoint x="250" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zlq47JBPpiQjWFzgZbj9-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="zlq47JBPpiQjWFzgZbj9-1" target="4LEHPHs3rhttjtVUU_GD-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="320" as="sourcePoint" />
+            <mxPoint x="270" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zlq47JBPpiQjWFzgZbj9-17" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;$$&lt;br&gt;\begin{eqnarray}&lt;br&gt;x_{2}(=1)&lt;br&gt;\end{eqnarray}&lt;br&gt;$$&lt;/font&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="80" y="430" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zlq47JBPpiQjWFzgZbj9-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.294;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="zlq47JBPpiQjWFzgZbj9-17" target="4LEHPHs3rhttjtVUU_GD-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="390" as="sourcePoint" />
+            <mxPoint x="260" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zlq47JBPpiQjWFzgZbj9-21" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;$$ \begin{eqnarray} 重みw_0 \end{eqnarray}&amp;nbsp; $$&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="50" y="200" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zlq47JBPpiQjWFzgZbj9-22" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;$$ \begin{eqnarray} 重みw_2 \end{eqnarray}&amp;nbsp; $$&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="30" y="380" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zlq47JBPpiQjWFzgZbj9-23" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;$$ \begin{eqnarray} 重みw_1 \end{eqnarray}&amp;nbsp; $$&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="40" y="290" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zlq47JBPpiQjWFzgZbj9-24" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;$$ \begin{array}{ll} a&amp;amp;=w_{0}x_{0}+w_{1}x_{1}+w_{2}x_{2}\\&amp;amp;=w_{0}x_{0}+w_{1}x_{1}+w_{2}&amp;nbsp;\end{array}&amp;nbsp; $$&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="10" y="395" width="790" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zlq47JBPpiQjWFzgZbj9-29" value="入力" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-30" y="240" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zlq47JBPpiQjWFzgZbj9-30" value="ダミー入力" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-60" y="445" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zlq47JBPpiQjWFzgZbj9-32" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="155" width="50" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="zlq47JBPpiQjWFzgZbj9-33" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" parent="1" vertex="1">
+          <mxGeometry x="15" y="425" width="60" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zlq47JBPpiQjWFzgZbj9-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="zlq47JBPpiQjWFzgZbj9-33" target="zlq47JBPpiQjWFzgZbj9-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4LEHPHs3rhttjtVUU_GD-1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="270" y="280" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4LEHPHs3rhttjtVUU_GD-2" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4LEHPHs3rhttjtVUU_GD-1" target="4LEHPHs3rhttjtVUU_GD-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="350" as="sourcePoint" />
+            <mxPoint x="340" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zlq47JBPpiQjWFzgZbj9-13" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;$$ \begin{eqnarray} y \end{eqnarray}&amp;nbsp; $$&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="185" y="305" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zlq47JBPpiQjWFzgZbj9-10" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;$$ \begin{eqnarray} a \end{eqnarray}&amp;nbsp; $$&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="140" y="305" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zlq47JBPpiQjWFzgZbj9-20" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="318" as="sourcePoint" />
+            <mxPoint x="450" y="318" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zlq47JBPpiQjWFzgZbj9-26" value="出力" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="305" y="320" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zlq47JBPpiQjWFzgZbj9-25" value="入力&lt;div&gt;総和&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="270" y="320" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zlq47JBPpiQjWFzgZbj9-27" value="0~1の値" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="370" y="290" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SNDF_gGv5CjDabLqJLmL-1" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="319" as="sourcePoint" />
+            <mxPoint x="480" y="319" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SNDF_gGv5CjDabLqJLmL-2" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bspan%20style%3D%26quot%3Bfont-size%3A%2016px%3B%26quot%3B%26gt%3B%24%24%20%5Cbegin%7Barray%7D%7Bll%7D%20t_%7B0%7D%20%5Cend%7Barray%7D%26amp%3Bnbsp%3B%20%24%24%26lt%3B%2Fspan%26gt%3B%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22570%22%20y%3D%2280%22%20width%3D%22300%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="570" y="368" width="20" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SNDF_gGv5CjDabLqJLmL-3" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;$$ \begin{array}{ll} t \end{array}&amp;nbsp; $$&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="390" y="290" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SNDF_gGv5CjDabLqJLmL-4" value="教師信号" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="490" y="270" width="70" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
